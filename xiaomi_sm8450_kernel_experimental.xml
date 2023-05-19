@@ -57,6 +57,25 @@
   <project clone-depth="1" name="kernelplatform/prebuilts-master/clang/host/linux-x86" path="kernel_platform/prebuilts-master/clang/host/linux-x86" remote="clo_kernel_waipio"/>
   <project clone-depth="1" name="kernelplatform/prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.17-4.8" path="kernel_platform/prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.17-4.8" remote="clo_kernel_waipio"/>
 
+!-- Device trees -->
+
+  <project name="cupid-development/android_device_xiaomi_cupid" path="device/xiaomi/cupid" remote="ssh" />
+  <project name="cupid-development/android_device_xiaomi_zeus" path="device/xiaomi/zeus" remote="ssh" />
+
+  <project name="cupid-development/android_device_xiaomi_sm8450-common" path="device/xiaomi/sm8450-common" remote="ssh" />
+
+ <!-- fwk-detect modules -->
+  <project name="LineageOS/android_vendor_qcom_opensource_core-utils-sys" path="vendor/qcom/opensource/core-utils-sys" />
+  <project name="LineageOS/android_vendor_qcom_opensource_core-utils-vendor" path="vendor/qcom/opensource/core-utils-vendor" />
+
+  <!-- HALs -->
+  <project name="cupid-development/android_hardware_qcom_audio-ar" path="hardware/qcom-caf/sm8450/audio" revision="lineage-20.0-caf-sm8450" />
+  <project name="cupid-development/android_hardware_qcom_display" path="hardware/qcom-caf/sm8450/display" revision="lineage-20.0-caf-sm8450" />
+  <project name="cupid-development/android_hardware_qcom_media" path="hardware/qcom-caf/sm8450/media" revision="lineage-20.0-caf-sm8450" />
+  <project name="eqs-development/android_vendor_qcom_opensource_agm" path="vendor/qcom/opensource/agm" />
+  <project name="eqs-development/android_vendor_qcom_opensource_audio-hal_st-hal-ar" path="vendor/qcom/opensource/audio-hal/st-hal-ar" />
+  <project name="eqs-development/android_vendor_qcom_opensource_pal" path="vendor/qcom/opensource/pal" />
+  
   <!-- Video manifest -->
   <!-- https://git.codelinaro.org/clo/la/techpack/video/manifest -->
   <remote name="clo_video_waipio"
